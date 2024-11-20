@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naol Feyisa</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mediaquerries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <header>
+      <div class="logo">
+        Naol
+      </div>
+  
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contactme">Contact Me</a></li>
+      </ul>
+    </header>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <header>
+      <div class="logo"><ul><li><a href="#home">Naol</a></li></ul></div>
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#aboutme" onclick="toggleMenu()">About Me</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contactme" onclick="toggleMenu()">Contact Me</a></li>
+      </div>
+    </header>
+  </nav>
+
+  <section id="home" class="home">
+    <img class="profile-pic" src="portfolio-images/5x5.jpg" alt="naol feyisa profile picture">
+    <div class="text-content">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1 class="title">Naol Feyisa</h1>
+      <p class="section__text__p2">Student</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('cv.pdf')">
+          Download CV
+        </button>
+
+        <button class="btn btn-color-2" onclick="location.href='./#contactme'">
+          Contact Me
+        </button>
+      </div>
+    </div>
+    
+    <img
+      class="icon arrow"
+      src="icons/arrow.png"
+      alt="Arrow icon"
+      onclick="location.href='./#aboutme'"
+    >  
+  </section>
+
+  <section id="aboutme">
+    <p class="section__text__p1">Get To Know More</p>
+    <div class="about-details-container">
+      <div class="section-container-2">
+        <h1 class="title">About Me</h1>
+        <img src="portfolio-images/illustration-guy-with-laptop.png" 
+            alt="profile pic" 
+            class="about-me-pic"
+        >
+        <p>
+          I am a software engineering 
+          student passionate about creating innovative and efficient 
+          software solutions. With a strong foundation in programming 
+          languages, software development principles, and problem-solving, 
+          I am especially interested in developing 
+          user-friendly applications that enhance everyday experiences. 
+          In addition to my academic work, I continuously seek opportunities to 
+          learn new technologies and expand my knowledge, eager to 
+          contribute to projects that make a meaningful impact.
+          My objective is to make as many happy customers as I can while also 
+          learning as much as I can from them.
+        </p>
+      </div>
+
+      
+      <div class="hobby">
+        <h1 class="title">My Hobbies</h1>
+        <p>Click on the image to explore my hobbies</p>
+        <img src="portfolio-images/hobbies-entertainment-concept-large-inscription-260nw-2136659695.webp" 
+          alt="hobby pic" 
+          class="my-hobby-pic" 
+          onclick="location.href='hobby.html'"
+        >
+      </div>
+    </div>
+
+    <img
+      class="icon arrow"
+      src="icons/arrow.png"
+      alt="Arrow icon"
+      onclick="location.href='./#skills'"
+      >
+  </section>
+
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="text-container">
+      <p>
+        I have developed a diverse skill set in software development, 
+        ranging from frontend design to backend programming and database management. 
+      </p>
+      <p>
+        My proficiency includes:
+      </p>      
+    </div>
+
+    <div class="about-containers">
+      <div class="details-container">
+        <h3 class="skill-sub-title">Frontend Development</h3>
+        <div class="article-container">
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">HTML</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+        
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">CSS</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+        
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">JavaScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">TypeScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="details-container">
+        <h3 class="skill-sub-title">Languages</h3>
+        <div class="article-container">
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">Python</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+  
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">Java</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="details-container">
+        <h3 class="skill-sub-title">Backend Development</h3>
+        <div class="article-container">
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">PostgreSQL</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">Node JS</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">Express JS</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+
+          <article>
+            <img class="icon" src="icons/checkmark.png" alt="skill icon">
+            <div>
+              <h3 class="skill-type">GIT</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>    
+
+    <img
+      class="icon arrow"
+      src="icons/arrow.png"
+      alt="Arrow icon"
+      onclick="location.href='./#projects'"
+    >
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">Projects</h1>
+    <div class="text-container">
+      <p>
+        Here is a selection of software solutions I have developed, 
+        each demonstrating my passion for innovation, problem-solving, and 
+        creating impactful applications. These projects reflect my technical expertise 
+        and my commitment to making technology more accessible and efficient.
+      </p>      
+    </div>
+    
+    <div class="about-containers">
+      <div class="projects-details-container">
+        <img class="project-pic" src="portfolio-images/project1.jpg" alt="project image">
+        <h3 class="project-sub-title">Inventory management System</h3>
+        <p>
+          A system designed to simplify and optimize inventory tracking and control for businesses of all sizes. 
+          Built to reduce errors and improve efficiency.
+        </p>
+        <button class="btn btn-color-1" onclick="window.open('https://github.com/NaolFeyisa2/Inventory-Management-System/tree/ee69c68847af806be15d9572bb69154dd26db684/Inventory%20Management%20System')">
+          Github
+        <button>
+      </div>
+
+      <div class="projects-details-container">
+        <img class="project-pic" src="portfolio-images/project2.jpg" alt="project image">
+        <h3 class="project-sub-title">Scientific Calculator</h3>
+        <p>
+          An advanced calculator with comprehensive functionalities for scientific computations.
+        </p>
+        <button class="btn btn-color-1" onclick="window.open('https://github.com/NaolFeyisa2/Scientific-Calculator/tree/457c713b95830123f6b834f00990b53cccca5d51/Scientific%20Calculator')">
+          Github
+        <button>
+      </div>
+
+      <div class="projects-details-container">
+        <img class="project-pic" src="portfolio-images/project3.png" alt="project image">
+        <h3 class="project-sub-title">Tutoring Platform</h3>
+        <p>
+          An online platform connecting students and tutors, offering tools for scheduling, live sessions, and progress tracking.
+        </p>
+        <button class="btn btn-color-1" onclick="window.open('https://github.com/NaolFeyisa2/Tutoring-Platform/tree/c590d74d4141d9170b1fb68d775e1fb9c0e44ece/Tutoring%20Platform')">
+          Github
+        <button>
+      </div>
+    </div>    
+
+    <img
+      class="icon arrow"
+      src="icons/arrow.png"
+      alt="Arrow icon"
+      onclick="location.href='./#contactme'"
+    >
+  </section>
+
+  <section id="contactme">
+    <div class="contact-me-details">
+      <h1 class="title">Let's connect!</h1>
+      <div class="contact-me-text">
+        If you want to know more about me or my work, 
+        or if you would just like to say hello, send me a message. 
+        I'd love to hear from you.
+      </div>
+    </div>
+
+    <div class="message-details">
+      <form action="https://api.web3forms.com/submit" method="POST" class="message-info">
+        <input type="hidden" name="access_key" value="413c9e4a-9c9b-45f4-9c4d-98a05745469d">
+        <div class="full-name">
+          <span class="name-span">Full Name</span>
+          <input class="name-input" id="fullName" name="fullName" type="text" value required>
+        </div>
+
+        <div class="email">
+          <span class="email-span">Email</span>
+          <input class="email-input" id="email" name="email" type="email" value required>
+        </div>
+
+        <div class="message">
+          <span class="message-span">Message</span>
+          <textarea class="message-text-area" id="message" name="message" required></textarea>
+        </div>
+
+        <div class="send-message">
+          <button class="send-message-button" type="submit">Send Message</button>
+        </div>
+      </form>
+
+      <div class="contact-me-image">
+        <img src="portfolio-images/message.png" alt="message">
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          Naol
+        </div>
+        
+        <div class="footer-address">
+          <h4>Address</h4>
+          <p>Email: naolfeyisa8@gmail.com</p>
+          <p>Phone: +251919085656</p>
+          <p>location: Addis Ababa</p>
+        </div>
+        
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/naol-feyisa-7bb08628b/" target="_blank">
+              <img class="icon" src="icons/linkedin-4.webp" alt="Linkedin icon">
+            </a>
+            <a href="https://x.com/naolfeysa" target="_blank">
+              <img class="icon" src="icons/Twitter-new-logo-on-transparent-background-PNG-.png" alt="Twitter icon">
+            </a>
+            <a href="https://www.instagram.com/naolfeysa/" target="_blank">
+              <img class="icon" src="icons/instagram.jpg" alt="instagram icon">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-rights">
+        <p>Copyright © 2024 Naol Feyisa. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </section>
+  <script type="text/JavaScript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+</body>
+<script src="script.js"></script>
+</html>
